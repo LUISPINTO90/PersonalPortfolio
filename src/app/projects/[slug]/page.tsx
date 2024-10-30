@@ -31,7 +31,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+    <div className="flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-4xl mb-4">
         <Button
           variant="outline"
