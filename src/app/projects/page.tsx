@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col justify-center items-center space-y-6">
+    <div className="flex flex-col justify-center items-center space-y-6 p-2 pb-8">
       <Card className="w-full mt-8 max-w-7xl z-10">
         <div className="shadow-sm border-neutral-300 dark:border-neutral-800 overflow-hidden bg-background rounded-xl w-full relative">
           <div className="relative px-6 py-8 sm:px-8 sm:py-10">
@@ -29,7 +29,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <Link href={`/projects/${project.slug}`} key={project.slug}>
-              <Card className="hover:shadow-lg transition-shadow duration-300 h-[400px] max-w-lg">
+              <Card className="hover:shadow-lg transition-shadow duration-300 max-w-lg">
                 <div className="p-4 space-y-4 h-full flex flex-col">
                   <div className="flex-grow">
                     <Image
@@ -44,7 +44,7 @@ export default function Projects() {
                   </div>
                   <hr className="border-t dark:border-neutral-800" />
                   <h2 className="text-xl font-semibold">{project.title}</h2>
-                  <p>
+                  <p className="text-neutral-400 dark:text-neutral-200">
                     {project.description.length > 100
                       ? project.description.substring(0, 100) + "..."
                       : project.description}
