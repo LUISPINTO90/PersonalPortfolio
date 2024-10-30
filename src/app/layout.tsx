@@ -9,13 +9,47 @@ import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Reemplaza esto con tu dominio real
+const baseUrl = "https://luispintogtz.netlify.app/";
+
 export const metadata: Metadata = {
   title: "Luis Pinto - Portfolio",
   description: "Luis Pinto's portfolio website",
   keywords: "Luis Pinto, web developer, software engineer",
-  // Add the image metadata
+  metadataBase: new URL(baseUrl),
   openGraph: {
-    images: ["/logo.png"],
+    title: "Luis Pinto - Portfolio",
+    description: "Luis Pinto's portfolio website",
+    url: baseUrl,
+    siteName: "Luis Pinto Portfolio",
+    images: [
+      {
+        url: `${baseUrl}/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Luis Pinto Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luis Pinto - Portfolio",
+    description: "Luis Pinto's portfolio website",
+    images: [`${baseUrl}/logo.png`],
+    creator: "@tuhandle",
+  },
+  icons: {
+    icon: "/logo.png",
+  },
+  // Agregamos estos meta tags adicionales para mejor compatibilidad
+  other: {
+    "og:image": `${baseUrl}/logo.png`,
+    "og:image:secure_url": `${baseUrl}/logo.png`,
+    "og:image:type": "image/png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
   },
 };
 
@@ -35,14 +69,9 @@ export default function RootLayout({
               <Navbar />
             </div>
           </div>
-
           <main className="flex-1 pb-8 pt-14">{children}</main>
-
-          {/* Footer */}
           <Footer />
         </ThemeProvider>
-
-        {/* Dot Pattern Background */}
         <DotPattern
           className={cn(
             "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
