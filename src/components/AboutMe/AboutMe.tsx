@@ -1,9 +1,9 @@
-// src/components/AboutMe/AboutMe.tsx
 import React from "react";
 import { LocationCard } from "../Location/LocationCard";
 import Skills from "../Skills/Skills";
-import Interests from "../Interests/Interests"; // Importa el nuevo componente Interests
+import Interests from "../Interests/Interests";
 import { Card } from "@/components/ui/card";
+import Link from "next/link"; // Asegúrate de importar Link
 
 const AboutMe: React.FC = () => {
   return (
@@ -17,8 +17,17 @@ const AboutMe: React.FC = () => {
           <div className="h-48">
             <Skills />
           </div>
-          <Interests /> {/* Usa el componente Interests */}
+          <Interests />
         </div>
+      </div>
+
+      <div className="flex justify-center py-6">
+        <Link
+          href="/about"
+          className="bg-blue-600 hover:text-blue-600 hover:bg-neutral-300 text-white py-2 px-4 rounded-lg transition-colors"
+        >
+          Know more about me
+        </Link>
       </div>
     </Card>
   );
