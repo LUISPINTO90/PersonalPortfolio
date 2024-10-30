@@ -2,6 +2,7 @@
 
 import AboutMe from "@/components/AboutMe/AboutMe";
 import Hero from "@/components/Hero/Hero";
+import SelectedProjects from "@/components/SelectedProjects/SelectedProjects";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
       {/* Contenedor del Hero */}
       <div className="flex justify-center items-center relative z-10 h-full">
         <Hero />
+      </div>
+      <div className="flex justify-center items-center relative z-10 h-full">
+        <SelectedProjects />
       </div>
       <div className="flex justify-center items-center relative z-10 h-full">
         <AboutMe />
