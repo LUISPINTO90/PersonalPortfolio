@@ -26,13 +26,13 @@ export default function RootLayout({
         className={`${inter.className} antialiased min-h-screen flex flex-col`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {/* Navbar */}
-          <div className="flex justify-center items-center relative z-10 h-20">
-            <Navbar />
+          <div className="fixed top-0 left-0 right-0 bg-none z-50">
+            <div className="flex justify-center items-center relative h-20">
+              <Navbar />
+            </div>
           </div>
 
-          {/* Contenido principal */}
-          <main className="flex-1 pb-8">{children}</main>
+          <main className="flex-1 pb-8 pt-14">{children}</main>
 
           {/* Footer */}
           <Footer />
