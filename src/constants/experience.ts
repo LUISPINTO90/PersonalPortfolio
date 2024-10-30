@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
   {
     id: 2,
     role: "Designer and Developer",
-    company: "MiUDC Personal Project",
+    company: "MiUDC Personal Team Project",
     period: "APR. 2024 — PRESENT",
     responsibilities: [
       "Proposal and implementation of a responsive Figma prototype",
