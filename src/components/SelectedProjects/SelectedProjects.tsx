@@ -8,7 +8,7 @@ import { projects } from "@/constants/projects";
 const SelectedProjects = () => {
   return (
     <Card className="w-full mt-8 max-w-7xl">
-      <h1 className="pt-8 pl-4 text-3xl font-bold tracking-tight sm:text-4xl text-blue-700 dark:text-white">
+      <h1 className="pt-8 pl-4 text-4xl font-bold tracking-tight sm:text-5xl text-blue-700 dark:text-white">
         Selected Projects
       </h1>
       <div className="w-full pt-6 p-4">

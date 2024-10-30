@@ -8,7 +8,7 @@ import Link from "next/link"; // Asegúrate de importar Link
 const AboutMe: React.FC = () => {
   return (
     <Card className="w-full mt-8 max-w-7xl">
-      <h1 className="pt-8 pl-4 text-3xl font-bold tracking-tight sm:text-4xl text-blue-700 dark:text-white">
+      <h1 className="pt-8 pl-4 text-4xl font-bold tracking-tight sm:text-5xl text-blue-700 dark:text-white">
         About Me
       </h1>
       <div className="w-full pt-6 grid grid-cols-12 gap-4 text-white p-4">
