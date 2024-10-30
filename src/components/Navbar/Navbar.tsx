@@ -56,7 +56,7 @@ const MobileNav = () => {
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
           <Link
-            href="https://github.com/LUISPINTO90"
+            href="https://github.com/LUISPINTO90/PersonalPortfolio"
             target="_blank"
             rel="noreferrer noopener"
             className="w-full cursor-pointer"
@@ -112,7 +112,7 @@ export default function Navbar() {
             <ThemeSwitch />
           </div>
           <Link
-            href="https://github.com/"
+            href="https://github.com/LUISPINTO90/PersonalPortfolio"
             target="_blank"
             rel="noreferrer noopener"
             className="list-none"
