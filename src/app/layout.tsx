@@ -32,7 +32,7 @@ export default function RootLayout({
           </div>
 
           {/* Contenido principal */}
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pb-8">{children}</main>
 
           {/* Footer */}
           <Footer />
