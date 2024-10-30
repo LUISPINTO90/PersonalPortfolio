@@ -20,7 +20,7 @@ const getCategoryIcon = (title: string) => {
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center space-y-6 pb-8">
+    <div className="flex flex-col items-center space-y-6 pb-8 p-2">
       {/* Header Card */}
       <Card className="w-full mt-8 max-w-7xl z-10">
         <div className="overflow-hidden bg-background rounded-xl w-full relative">
