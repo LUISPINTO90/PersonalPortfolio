@@ -1,8 +1,7 @@
-// src/components/common/ThemeSwitch.tsx
 "use client";
 
 import { Monitor, Moon, Sun } from "lucide-react";
-import { useThemeStore } from "@/store/useThemeStore";
+import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -17,7 +16,7 @@ interface ThemeSwitchProps {
 }
 
 export function ThemeSwitch({ className }: ThemeSwitchProps) {
-  const { setTheme } = useThemeStore();
+  const { setTheme } = useTheme();
 
   return (
     <DropdownMenu>
