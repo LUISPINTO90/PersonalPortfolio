@@ -36,8 +36,10 @@ export default function Projects() {
                       src={project.profilePhoto}
                       alt={project.title}
                       className="w-full h-48 object-contain rounded-lg"
-                      width={80}
-                      height={80}
+                      width={500}
+                      height={300}
+                      quality={100}
+                      priority
                     />
                   </div>
                   <hr className="border-t dark:border-neutral-800" />
