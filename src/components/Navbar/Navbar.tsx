@@ -1,4 +1,3 @@
-// src/components/Navbar/Navbar.tsx
 import React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
@@ -80,9 +79,9 @@ export default function Navbar() {
           href="/"
           className="inline-flex items-center gap-2.5 font-semibold"
         >
-          <Button variant="ghost">
+          <Button variant="outline" className="rounded-full">
             <span className="text-base font-semibold dark:text-white text-blue-600">
-              {"Luis Pinto"}
+              {"LP"}
             </span>
           </Button>
         </Link>
