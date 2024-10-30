@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import DotPattern from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`}>
+      <body
+        className={`${inter.className} antialiased min-h-screen flex flex-col`}
+      >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {/* Contenedor del Navbar */}
+          {/* Navbar */}
           <div className="flex justify-center items-center relative z-10 h-20">
             <Navbar />
           </div>
-          {children}
+
+          {/* Contenido principal */}
+          <main className="flex-1">{children}</main>
+
+          {/* Footer */}
+          <Footer />
         </ThemeProvider>
 
         {/* Fondo de Patrón de Puntos */}
