@@ -58,17 +58,38 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 </Badge>
               ))}
             </div>
-            {project.url && (
-              <Button
-                className="bg-blue-600 hover:text-blue-600 hover:bg-neutral-300 text-white flex items-center gap-2 max-w-xs"
-                asChild
-              >
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  View Project
-                  <ArrowUpRightFromSquare className="w-4 h-4" />
-                </a>
-              </Button>
-            )}
+            <div className="flex gap-4">
+              {project.url && (
+                <Button
+                  className="bg-blue-600 hover:text-blue-600 hover:bg-neutral-300 text-white flex items-center gap-2 max-w-xs"
+                  asChild
+                >
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                    <ArrowUpRightFromSquare className="w-4 h-4" />
+                  </a>
+                </Button>
+              )}
+              {project.urlGithub && (
+                <Button
+                  className="bg-blue-600 hover:text-blue-600 hover:bg-neutral-300 text-white flex items-center gap-2 max-w-xs"
+                  asChild
+                >
+                  <a
+                    href={project.urlGithub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Repository
+                    <ArrowUpRightFromSquare className="w-4 h-4" />
+                  </a>
+                </Button>
+              )}
+            </div>
           </div>
 
           {/* Image Carousel */}
@@ -88,6 +109,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                         className="object-contain rounded-lg"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={index === 0}
+                        quality={100}
                       />
                     </div>
                   </CarouselItem>
@@ -100,7 +122,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
           {/* Description */}
           <div className="prose dark:prose-invert max-w-none">
-            <p className="text-lg text-gray-700 dark:text-gray-300">
+            <p className="pt-4 max-w-2xl text-lg text-gray-700 dark:text-gray-300">
               {project.description}
             </p>
           </div>
