@@ -9,21 +9,21 @@ export default function Hero() {
   return (
     <Card className="w-full mt-8 max-w-7xl">
       <div className="shadow-sm border-neutral-300 dark:border-neutral-800 overflow-hidden bg-background rounded-xl w-full relative">
-        <div className="relative px-6 py-12 sm:px-8 sm:py-16">
+        <div className="relative px-6 py-8 sm:px-8 sm:py-10">
           <div className="space-y-8">
             {/* Name and Location */}
             <div className="space-y-2 z-10 relative">
               <h1 className="text-6xl font-bold tracking-tight sm:text-7xl text-blue-700 dark:text-white">
                 Luis Pinto
               </h1>
-              <h2 className="mt-3 text-xl font-semibold tracking-tight text-slate-200 sm:text-2xl">
+              <h2 className="mt-3 text-xl font-semibold tracking-tight text-neutral-500 dark:text-white sm:text-2xl">
                 Software Engineer
               </h2>
             </div>
 
             {/* Description */}
             <p className="text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 relative z-10 max-w-md">
-              Interested in UX/UI design and frontend development.
+              Focused on UX/UI design and Frontend development.
             </p>
 
             {/* Social Media Icons */}
