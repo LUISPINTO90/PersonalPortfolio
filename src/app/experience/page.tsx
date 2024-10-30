@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"; // Asegúrate de importar el comp
 
 export default function Experience() {
   return (
-    <div className="flex flex-col items-center space-y-6 pb-8">
+    <div className="flex flex-col items-center space-y-6 pb-8 p-2">
       <Card className="w-full mt-8 max-w-7xl z-10">
         <div className="overflow-hidden bg-background rounded-xl w-full relative">
           <div className="relative px-6 py-8 sm:px-8 sm:py-10">
