@@ -13,24 +13,9 @@ export const metadata: Metadata = {
   title: "Luis Pinto - Portfolio",
   description: "Luis Pinto's portfolio website",
   keywords: "Luis Pinto, web developer, software engineer",
+  // Add the image metadata
   openGraph: {
-    title: "Luis Pinto - Portfolio",
-    description: "Luis Pinto's portfolio website",
-    url: "https://luispintogtz.netlify.app/",
-    siteName: "Luis Pinto Portfolio",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Luis Pinto Portfolio",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  icons: {
-    icon: "/logo.png",
+    images: ["/logo.png"],
   },
 };
 
@@ -50,11 +35,14 @@ export default function RootLayout({
               <Navbar />
             </div>
           </div>
+
           <main className="flex-1 pb-8 pt-14">{children}</main>
+
           {/* Footer */}
           <Footer />
         </ThemeProvider>
-        {/* Fondo de Patrón de Puntos */}
+
+        {/* Dot Pattern Background */}
         <DotPattern
           className={cn(
             "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
