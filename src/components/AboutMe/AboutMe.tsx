@@ -26,7 +26,7 @@ const AboutMe: React.FC = () => {
           href="/about"
           className="bg-blue-600 hover:text-blue-600 hover:bg-neutral-300 text-white py-2 px-4 rounded-lg transition-colors"
         >
-          Know more about me
+          More about me
         </Link>
       </div>
     </Card>
