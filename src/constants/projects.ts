@@ -1,5 +1,3 @@
-// src/constants/projects.ts
-
 export interface Project {
   slug: string;
   profilePhoto: string;
@@ -17,7 +15,7 @@ export const projects: Project[] = [
     profilePhoto: "/projects/miudc/02.png",
     title: "MiUDC",
     description:
-      "Student communication platform. Where future students of the University of Colima can consult testimonials and ask questions about university careers to current students or graduates. Built with Next.js.",
+      "A dynamic student communication platform built with Next.js that connects prospective University of Colima students with current students and alumni. The platform enables users to explore authentic testimonials and engage in direct conversations about specific university programs, providing valuable insights for their academic journey.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     photos: [
       "/projects/miudc/02.png",
@@ -33,7 +31,7 @@ export const projects: Project[] = [
     profilePhoto: "/projects/control-prestamos/01.png",
     title: "Control of Classroom and Laboratory loans",
     description:
-      "This system allows students and professors of the Telematics Faculty of the University of Colima to reserve laboratories and classrooms quickly and easily, keeping an automated control of the availability and use of these spaces.",
+      "A comprehensive space management system developed for the Telematics Faculty at the University of Colima. This intuitive platform streamlines the reservation process for laboratories and classrooms, featuring an automated availability tracking system that optimizes resource utilization for both students and professors.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     photos: [
       "/projects/control-prestamos/01.png",
@@ -47,8 +45,9 @@ export const projects: Project[] = [
   {
     slug: "museo-fernando-del-paso",
     profilePhoto: "/projects/museo/01.png",
-    title: "Museo Fernando Del Paso",
-    description: `Platform, which together with the "Dirección General del Patrimonio Cultural" of the University of Colima. The museum's landing page was developed for the sale of virtual tours.`,
+    title: "Fernando Del Paso Museum",
+    description:
+      "An innovative digital platform developed in collaboration with the General Directorate of Cultural Heritage at the University of Colima. This custom-built museum landing page enhances visitor engagement through interactive virtual tours, making cultural experiences accessible to a broader audience.",
     tags: ["React", "Node.js", "Express", "Tailwind CSS"],
     photos: [
       "/projects/museo/01.png",
