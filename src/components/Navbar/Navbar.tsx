@@ -72,8 +72,8 @@ const MobileNav = () => {
 
 export default function Navbar() {
   return (
-    <Card className="w-full max-w-7xl shadow-sm text-sm border-neutral-300 dark:border-neutral-800">
-      <nav className="flex h-12 w-full flex-row items-center gap-6 px-4">
+    <Card className="w-full max-w-7xl shadow-sm text-sm border-neutral-100 rounded-md dark:border-neutral-800 rounded-t-none bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+      <nav className="flex h-16 w-full flex-row items-center gap-6 px-4">
         {/* Name Section */}
         <Link
           href="/"

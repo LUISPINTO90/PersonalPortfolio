@@ -65,7 +65,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="fixed top-0 left-0 right-0 bg-none z-50">
-            <div className="flex justify-center items-center relative h-20">
+            <div className="flex justify-center items-center relative h-16">
               <Navbar />
             </div>
           </div>
