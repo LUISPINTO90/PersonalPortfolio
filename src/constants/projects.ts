@@ -12,12 +12,13 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "miudc",
-    profilePhoto: "/projects/miudc/02.png",
+    profilePhoto: "/projects/miudc/05.png",
     title: "MiUDC",
     description:
       "A dynamic student communication platform built with Next.js that connects prospective University of Colima students with current students and alumni. The platform enables users to explore authentic testimonials and engage in direct conversations about specific university programs, providing valuable insights for their academic journey.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     photos: [
+      "/projects/miudc/05.png",
       "/projects/miudc/02.png",
       "/projects/miudc/01.png",
       "/projects/miudc/03.png",
