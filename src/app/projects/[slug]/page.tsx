@@ -106,10 +106,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                         src={photo}
                         alt={`${project.title} - Image ${index + 1}`}
                         fill
-                        className="object-contain rounded-lg"
+                        className="rounded-lg"
+                        style={{ objectFit: "contain" }}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={index === 0}
                         quality={100}
+                        unoptimized
                       />
                     </div>
                   </CarouselItem>
@@ -121,7 +123,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </div>
 
           {/* Description */}
-          <div className="prose dark:prose-invert max-w-none">
+          <div className="flex justify-center items-center prose dark:prose-invert max-w-none">
             <p className="pt-4 max-w-2xl text-lg text-gray-700 dark:text-gray-300">
               {project.description}
             </p>
