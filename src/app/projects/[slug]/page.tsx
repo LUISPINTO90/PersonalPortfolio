@@ -99,19 +99,16 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 {project.photos.map((photo, index) => (
                   <CarouselItem
                     key={index}
-                    className="cursor-grab active:cursor-grabbing"
+                    className="cursor-grab active:cursor-grabbing flex justify-center items-center"
                   >
-                    <div className="relative h-full w-full">
+                    <div className="relative w-full h-full flex justify-center items-center">
                       <Image
                         src={photo}
                         alt={`${project.title} - Image ${index + 1}`}
-                        fill
-                        className="rounded-lg"
-                        style={{ objectFit: "contain" }}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        priority={index === 0}
-                        quality={100}
-                        unoptimized
+                        className="rounded-lg max-h-96 w-auto object-contain max-w-full	h-auto"
+                        height={600}
+                        width={1200}
+                        priority
                       />
                     </div>
                   </CarouselItem>
