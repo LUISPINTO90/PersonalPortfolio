@@ -43,20 +43,4 @@ export const projects: Project[] = [
     urlGithub:
       "https://github.com/LUISPINTO90/ControlPrestamoAulasLaboratorios",
   },
-  {
-    slug: "museo-fernando-del-paso",
-    profilePhoto: "/projects/museo/01.png",
-    title: "Fernando Del Paso Museum",
-    description:
-      "An innovative digital platform developed in collaboration with the General Directorate of Cultural Heritage at the University of Colima. This custom-built museum landing page enhances visitor engagement through interactive virtual tours, making cultural experiences accessible to a broader audience.",
-    tags: ["React", "Node.js", "Express", "Tailwind CSS"],
-    photos: [
-      "/projects/museo/01.png",
-      "/projects/museo/02.png",
-      "/projects/museo/03.png",
-      "/projects/museo/04.png",
-      "/projects/museo/05.png",
-    ],
-    urlGithub: "https://github.com/VR-EnElDelPaso",
-  },
 ];

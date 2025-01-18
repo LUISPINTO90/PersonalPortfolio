@@ -51,45 +51,6 @@ const SelectedProjects = () => {
               </Card>
             </Link>
           ))}
-
-          {/* Third project only visible on large screens */}
-          <Link
-            href={`/projects/${projects[2].slug}`}
-            className="hidden lg:block"
-          >
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <div className="p-4 space-y-4 h-full flex flex-col">
-                <div className="flex-grow">
-                  <Image
-                    src={projects[2].profilePhoto}
-                    alt={projects[2].title}
-                    className="w-full h-48 object-contain rounded-lg"
-                    width={500}
-                    height={300}
-                    quality={100}
-                  />
-                </div>
-                <hr className="border-t dark:border-neutral-800" />
-                <h2 className="text-xl font-semibold">{projects[2].title}</h2>
-                <p className="text-neutral-400 dark:text-neutral-200">
-                  {projects[2].description.length > 100
-                    ? projects[2].description.substring(0, 100) + "..."
-                    : projects[2].description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {projects[2].tags.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant="secondary"
-                      className="p-2 rounded-full backdrop-blur-md border border-neutral-400"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </Card>
-          </Link>
         </div>
       </div>
 
